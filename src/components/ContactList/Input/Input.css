@@ -1,0 +1,24 @@
+.sidebar-input {
+    flex-shrink: 0; 
+    width: 95%;
+    background-color: #1a1a1a; 
+    border: 2px solid #fff;     
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease; 
+    outline: none;             
+   
+}
+.sidebar-input:focus {
+    border-color: rgba(155, 89, 182, 0.8);   
+    background-color: #2d2c2c;    
+    box-shadow: 0px 0px 15px rgba(155, 89, 182, 0.4);
+}
+
+.sidebar-input::placeholder {
+    color: #d4d4d4;
+    font-style: italic;
+}

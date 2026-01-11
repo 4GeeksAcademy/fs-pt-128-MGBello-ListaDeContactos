@@ -1,0 +1,35 @@
+* {
+    font-family: "Rajdhani", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #aaacaf; /* Negro profundo */
+}
+.home-container {   
+    min-height: calc(70vh - 150px);   
+       
+}
+.contact-height{
+    height: auto;
+    min-height: 70vh;
+}
+.footer-custom{
+    position:absolute;
+    top:0;
+}
+.custom-navbar{
+    color:#a855f7;
+    text-decoration: none;
+}
+.custom-navbar:active{
+    text-decoration: none;
+}
+.custom-navbar:hover{
+    text-decoration: none;
+}
+.btn-loadCustom{
+    color:#facc15; 
+    font-size: 18px;
+}

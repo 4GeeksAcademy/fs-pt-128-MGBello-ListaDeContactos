@@ -1,0 +1,49 @@
+.sidebar-list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.sidebar-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-list-container::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar-list-container::-webkit-scrollbar-thumb {
+    background: rgba(155, 89, 182, 0.8);
+    border-radius: 10px;
+}
+
+.sidebar-contact__container:hover,
+.sidebar-contact__container:active {
+    background: linear-gradient(to right, #9b59b6, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.sidebar-image_container {
+    width: 90px;
+    height: 90px;
+}
+
+.sidebar-image_container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(155, 89, 182, 0.8));
+}
+
+.sidebar-name {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(155, 89, 182, 0.8);
+}

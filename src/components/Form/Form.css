@@ -1,0 +1,76 @@
+.custom-formContainer {
+    position:relative;
+    width: 90%; 
+    max-width: 600px; 
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    background-color: #000; 
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.5), 
+        0 0 20px rgba(186, 104, 200, 0.4), 
+        0 0 40px rgba(155, 89, 182, 0.2); 
+    
+    border: 1px solid rgba(155, 89, 182, 0.3); 
+    transition: all 0.4s ease;
+    padding: 0;
+}
+.form-custom {
+    flex-shrink: 0; 
+    width: 95%;
+    background-color: #1a1a1a; 
+    border: 2px solid #fff;     
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    outline: none;             
+    margin: 15px 10px 10px 10px;
+}
+
+.form-custom:focus {
+    border-color: rgba(155, 89, 182, 0.8);   
+    background-color: #000;    
+    box-shadow: 0px 0px 15px rgba(155, 89, 182, 0.4);
+}
+
+.form-custom::placeholder {
+    color: #d4d4d4;
+    font-style: italic;
+}
+.btn-addCustom{
+    color: #A020F0; 
+    font-size:18px;
+}
+.btn-backCustom:hover,
+.btn-addCustom:hover{
+    color: #d4d4d4; 
+}
+.text-customColor{
+    color:#a941fe;
+    font-size: 18px;
+}
+.btn-backCustom{
+    text-align: start;
+    color:#facc15; 
+    font-size: 18px;
+}
+.alert-custom {
+    position: absolute;  
+    top: 5px; /* Ajusta este valor para que quede entre el borde superior y el título */
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 85%; /* Un poco más estrecho suele quedar mejor */
+    text-align: center;     
+    z-index: 100;       
+    background: rgba(30, 0, 50, 0.98); /* Casi opaco para que no se transparente el título detrás */
+    border: 1px solid #a366ff;
+    color: #d1b3ff;
+    box-shadow: 0 0 20px rgba(163, 102, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    pointer-events: none; /
+}

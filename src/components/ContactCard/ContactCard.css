@@ -1,0 +1,125 @@
+.contact-card {
+    width: 90%;
+    max-width: 450px;
+    height: 500px; 
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(186, 104, 200, 0.4),
+        0 0 40px rgba(155, 89, 182, 0.2);
+
+    border: 1px solid rgba(155, 89, 182, 0.3);
+    transition: all 0.4s ease;
+}
+
+.contact-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.contact-card_imagen {
+    border-radius: 10px 10px 0 0;
+    height: auto;
+
+}
+
+.card-image_container {
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+}
+
+.card-image_container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(155, 89, 182, 0.8));
+}
+
+.contact-name {
+    letter-spacing: 2px
+}
+.contact-card__body{
+    height: auto;
+}
+.contact-card__body i {
+    color: #A020F0;
+}
+.modal-headerCustom,
+.btn-closeCustom,
+.btn-random {
+    color: #a333ff;
+    font-size: 18px;
+}
+
+.btn-randomdelete,
+.btn-deleteCustom {
+    color: #ff0055;
+    font-size: 18px;
+}
+
+.load-icon {
+    color: #A020F0;
+    font-size: 60px;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.load-text {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* Sube 15 píxeles */
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.modal-contentCustom {
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(186, 104, 200, 0.4),
+        0 0 40px rgba(155, 89, 182, 0.2);
+
+    border: 1px solid rgba(155, 89, 182, 0.3);
+    transition: all 0.4s ease;
+}
+
+
+.btn-deleteCustom:hover,
+.btn-closeCustom:hover{
+    color: #FFFFFF;
+}
+.text-email {
+ white-space: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    font-size: 0.85rem;
+}
+.text-email::-webkit-scrollbar {
+    display: none; 
+}
