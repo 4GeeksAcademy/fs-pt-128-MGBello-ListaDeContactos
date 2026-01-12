@@ -1,3 +1,8 @@
+.contact-card__text {
+    width: 90%;
+    max-width: 450px;
+    height: 500px; 
+}
 .contact-card {
     width: 90%;
     max-width: 450px;
@@ -60,17 +65,10 @@
 .contact-card__body i {
     color: #A020F0;
 }
-.modal-headerCustom,
-.btn-closeCustom,
-.btn-random {
-    color: #a333ff;
-    font-size: 18px;
-}
 
-.btn-randomdelete,
-.btn-deleteCustom {
-    color: #ff0055;
-    font-size: 18px;
+.btn-edit {
+    color: #a333ff;
+    font-size: 20px;
 }
 
 .load-icon {
@@ -99,21 +97,6 @@
     }
 }
 
-.modal-contentCustom {
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.5),
-        0 0 20px rgba(186, 104, 200, 0.4),
-        0 0 40px rgba(155, 89, 182, 0.2);
-
-    border: 1px solid rgba(155, 89, 182, 0.3);
-    transition: all 0.4s ease;
-}
-
-
-.btn-deleteCustom:hover,
-.btn-closeCustom:hover{
-    color: #FFFFFF;
-}
 .text-email {
  white-space: nowrap;
     overflow-x: auto; 
@@ -122,4 +105,20 @@
 }
 .text-email::-webkit-scrollbar {
     display: none; 
+}
+.btn-edit{
+    color: #a333ff;
+    font-size: 20px;
+}
+.modal-headerCustom,
+.btn-closeCustom,
+.btn-random {
+    color: #a333ff;
+    font-size: 18px;
+}
+
+.btn-randomdelete,
+.btn-deleteCustom {
+    color: #ff0055;
+    font-size: 18px;
 }

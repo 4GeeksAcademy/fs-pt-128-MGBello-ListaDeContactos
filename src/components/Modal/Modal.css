@@ -1,0 +1,37 @@
+.modal-headerCustom {
+    color: #a333ff;
+    font-size: 20px;
+}
+.btn-delete,
+.btn-deleteCard{
+    color: #ff0055;
+    font-size: 20px;
+}
+.btn-closePurple{
+    color: #a333ff;
+    font-size: 20px;
+}
+.btn-addDemo{
+    color:#facc15; 
+    font-size: 18px;
+}
+.btn-addDemo:hover,
+.btn-delete:hover,
+.btn-closePurple:hover{
+    color:#FFF
+}
+.modal-contentCustom {
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(186, 104, 200, 0.4),
+        0 0 40px rgba(155, 89, 182, 0.2);
+
+    border: 1px solid rgba(155, 89, 182, 0.3);
+    transition: all 0.4s ease;
+}
+
+
+.btn-deleteCustom:hover,
+.btn-closeCustom:hover{
+    color: #FFFFFF;
+}

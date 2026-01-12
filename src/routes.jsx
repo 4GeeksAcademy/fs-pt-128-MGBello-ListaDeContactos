@@ -8,7 +8,7 @@ import {
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
 import { Single } from "./pages/Single";
-import { Form } from "./components/Form/Form.jsx";
+import { Form } from "./pages/Form/Form.jsx";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(

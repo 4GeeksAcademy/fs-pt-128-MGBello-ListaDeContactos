@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 import useGlobalReducer from "../../hooks/useGlobalReducer";
-import './ContactCard.css'
+import './ContactCard.css';
+import { modalData } from "../../data/dataModal"
 import { DeleteModal } from "./DeleteModal/DeleteModal";
 
 export const Contact = () => {
     const { store, dispatch } = useGlobalReducer()
-    const contactExist = store.contacts.find(c => c.id === store.contactSelected?.id);
+    const contactExist = store.contacts.find(contact => contact.id === store.contactSelected?.id);
+
 
 
     if (!store.contactSelected || !contactExist) {
         return (
-            <div className="d-flex flex-column justify-content-center align-items-center w-100">
+            <div className="d-flex flex-column justify-content-center align-items-center contact-card__text w-100">
                 <i className="fa-solid fa-spaghetti-monster-flying load-icon"></i>
                 <p className="load-text">Escaneando señales... selecciona un objetivo</p>
             </div>
@@ -52,11 +54,11 @@ export const Contact = () => {
                 </div>
                 <div className="d-flex justify-content-end alig-items-end mt-2 mb-2 gap-3 g-0">
                     <Link to={`/edit/${store.contactSelected.id}`}>
-                        <button className="btn btn-random">
+                        <button className="btn btn-edit">
                             <i className="fa-solid fa-pen-fancy mx-1"></i> Edit
                         </button>
                     </Link>
-                  <DeleteModal/>
+                   <DeleteModal/>
                 </div>
             </div>
         </div>
