@@ -14,7 +14,7 @@ export const modalData = {
         message: "Funcionalidad pensada para borrar los datos demo antes de usar. Se eliminarán TODOS los registros actuales de la lista de contacto, DEMOS o no.",
         buttonText: `Borrar Agenda Completa`,
         buttonIcon: `fa-solid fa-meteor mx-1`,
-        btnColorSecondary: `btn-deleteCard`,
+        btnColorSecondary: `btn-delete`,
         colorClass: "btn-delete"
     }
 };
